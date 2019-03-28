@@ -1,0 +1,83 @@
+<!doctype HTML>
+    
+    <html lang=port>
+        <head>
+            <title>Exercício 1 - Aula 04</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <header style="font-size: 64px"><img src="./forms-icon.png" width="90px" height="90px"> Empresa de formulários S.A.</header>
+<br><br>
+            <h2>Gostaríamos de conhecê-lo melhor! (para fins lucrativos, é claro)</h2>
+            <div style="max-width: 500px">Nossa empresa trabalha colhendo dados de pessoas ao redor do mundo a fim de manipular distribuição de propaganda. Adoraríamos obter informações sobre você para adicioná-lo ao nosso banco de dados.</div>
+<br><br>
+            <form style="max-width: 400px" action="">
+                <fieldset style="width: inherit; border-style: hidden" name="form_pg1">
+                    <legend>Dados pessoais</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" size="64" placeholder="Aurélio Buarque de Hollanda">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" size="64" placeholder="ex@mail.com">
+<br><br>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" id="tel" size="10" placeholder="xxxxx-xxxx" pattern="[0-9]{10}">
+<br><br>
+                    <label for="estado">Estado</label>
+                        <select name="UF">
+                            <optgroup label="UF">
+                                <option value="RJ">AC</option>
+                                <option value="RJ">AL</option>
+                                <option value="RJ">AM</option>
+                                <option value="RJ">AP</option>
+                                <option value="RJ">BA</option>
+                                <option value="RJ">CE</option>
+                                <option value="RJ">DF</option>
+                                <option value="RJ">ES</option>
+                                <option value="RJ">GO</option>
+                                <option value="RJ">MA</option>
+                                <option value="RJ">MG</option>
+                                <option value="RJ">MS</option>
+                                <option value="RJ">MT</option>
+                                <option value="RJ">PA</option>
+                                <option value="RJ">PB</option>
+                                <option value="RJ">PE</option>
+                                <option value="RJ">PI</option>
+                                <option value="RJ">PR</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RJ">RN</option>
+                                <option value="RJ">RO</option>
+                                <option value="RJ">RR</option>
+                                <option value="RJ">RS</option>
+                                <option value="RJ">SC</option>
+                                <option value="RJ">SE</option>
+                                <option value="SP">SP</option>
+                                <option value="RJ">TO</option>
+                            </optgroup>
+                        </select>
+<br><br>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Próximo">
+                </fieldset>
+                <fieldset style="width: inherit; border-style: hidden" name="form_pg2">
+                    <legend>Preferências</legend>
+                    <label style="display: block;">Preferências esportivas:</label>
+                    <textarea rows="5" cols="20" maxlength="500"></textarea>
+                    <label style="display: block;">Preferências de estudo:</label>
+                    <textarea rows="5" cols="20" maxlength="500"></textarea>
+<br><br>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+<br><br>
+            <footer>
+                <pre id="contato">Entre em contato conosco:
+	   TEL.: (21) 1234-5678
+	   E-MAIL: email.mockup@faeterj-rio.edu.br
+	   @formsetc
+	   Clarimundo de Melo, n. 2, Quintino, Rio de Janeiro, RJ
+                </pre>
+            </footer>
+        </body>
+    </html>
+    
