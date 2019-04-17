@@ -6,7 +6,7 @@
         <meta charset="utf-8">
     </head>
     <body>
-       <table style="background-color: mintcream; border: 1px #000000 solid;">
+       <table id="section" style="background-color: mintcream; border: 1px #000000 solid;">
             <caption style="font-size: 24px">Dias da semana ao redor do mundo</caption>
             <tbody>
                 <tr>
@@ -94,5 +94,10 @@
             <p>Os dias da semana em inglês e em alemão possuem origem na mitologia nórdica, e seus dias referenciam os deuses dessa mitologia.</p>
             <p>Em espanhol e francês, os dias da semana referenciam os deuses greco-romanos.</p>
         </article>
+        
+        <script src="./script.js">
+            const mySection = document.querySelector("#section");
+            console.log(mySection);
+        </script>
     </body>
 </html>
