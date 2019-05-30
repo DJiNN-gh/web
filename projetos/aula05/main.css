@@ -1,0 +1,87 @@
+ *{
+     margin: 2%;
+     margin-bottom: .5%;
+     }
+header{
+    /* ajuste de cor */
+    color: #ffc046;
+    /* ajuste de plano de fundo */
+    background-image: url("abigail-lynn-greenhouse-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
+    /* ajuste de posicionamento */
+    height: 40vh;
+    /* ajuste de fonte */
+    font-family: Abril Fatface, cursive;
+    font-size: 60px;
+    text-align: justify;
+    }
+h3{
+    /* ajuste de cor */
+    color: #ffc046;
+    /* ajuste de posicionamento */
+    padding-top: 10px;
+    /* ajuste da fonte */
+    font-size: 32px;
+    }
+div{
+    /*ajuste de posicionamento */
+
+    height: 40vh;
+}
+article{
+    /* ajuste de cor */
+    color: ghostwhite;
+    /* ajuste de fonte */
+    font-size: 18px;
+    /* ajuste de posicionamento */
+    padding: 20px 20px 20px 20px;
+    width: auto;
+    height: auto;
+    }
+ul{
+    list-style: none;
+    }
+li{
+    /* ajuste de fonte */
+    font-size: 24px;
+    font-weight: 600;
+    /* ajuste de posicionamento */
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    text-indent: 2vw;
+    }
+img{
+    float: right;
+}
+#bloco_primeiro{
+    /* ajuste de cor */
+    background-color: #4c8c4a;
+    /* ajuste de posicionamento */
+    height: 30vh;
+    /* ajuste de fonte */
+    font-family: Times New Roman, serif;
+    }
+#bloco_segundo{
+    /* ajuste de posisionamento */
+    width: auto;
+    height: auto;
+    }
+#bloco_terceiro{
+    /* ajuste de cor */
+    background-color: #4c8c4a;
+    /* ajuste de fonte */
+    font-family: Times New Roman, serif;
+    /* ajuste de posicionamento */
+    }
+footer{
+    /* ajuste de plano de fundo */
+    background-color: #ffc046;
+    /* ajuste de fonte */
+    font-family: Abril Fatface, cursive;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20vh;
+    
+    }

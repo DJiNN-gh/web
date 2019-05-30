@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- Este exemplo foi criado por Sergio Zumpano Arnosti - Projeto Codifique 2014 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calcular Média</title>
+        <style type="text/css">
+            *{
+                font-family: PT Sans, sans-serif;
+            }
+            #title{
+                font-size: 2em;
+                color: cornflowerblue;
+                background-color: aliceblue;
+            }
+            form{
+                background-color: aqua;
+            }
+            #calc{
+                background-color: aliceblue;
+                font-size: 1em;
+                color: #111111;
+            }
+        </style>
+        <script type="text/javascript">
+            /* Esta função calcula a média ponderada entre duas provas */
+            function calculaMedia(nota1, nota2, peso1, peso2){ 
+                var media = 0;
+                media = (parseFloat(nota1*peso1) + parseFloat(nota2*peso2))/(parseFloat(peso1) + parseFloat(peso2));    // Conta da média
+                // Usamos a função parseFloat() para o programa entender que estamos trabalhando com números
+                return media;}
+            /* Essa função limpa o campo de texto quando o usuário clica nele (onFocus) */
+            function limpaCampo(campo){
+                if(campo == 1){
+                    document.form.nota1.value="";}
+                    // Pega o elemento nota1 pelo usuário
+                if(campo == 2){
+                    document.getElementById("nota2").value="";}
+                    // Pega o elemento nota2 pelo ID
+                if(campo == 3){
+                    document.getElementById("peso1").value="";}
+                if(campo == 4){
+                    document.getElementById("peso2").value="";}
+            }
+            function mOver(obj){
+                obj.style.backgroundColor="#111111";
+                obj.style.color="#f2d2f2";
+                obj.style.fontSize="1.5em";
+            }
+            function mOut(obj){
+                obj.innerHTML="Calcular";
+                obj.style.backgroundColor="aliceblue";
+                obj.style.fontSize="1em";
+                obj.style.color="#111111";
+            }
+        </script>
+    </head>
+    <body>
+        <center><p id="title"><strong>CALCULA MÉDIA</strong></p><br><br> 
+            <form name="form">
+Nota 1: <input type="text" size="20" id="nota1" placeholder="Digite nota 1" onFocus="limpaCampo(1);"><br>
+Nota 2: <input type="text" size="20" id="nota2" placeholder="Digite nota 2" onFocus="limpaCampo(2);"><br><br>
+Peso Nota 1: <input type="text" size="20" id="peso1" placeholder="Digite peso prova 1" onFocus="limpaCampo(3);"><br>
+Peso Nota 2: <input type="text" size="20" id="peso2" placeholder="Digite peso prova 2" onFocus="limpaCampo(4);"><br><br>
+Media Final<br>
+    <input type="text" id="mf" size="20"><br><br>
+    <input id="calc" type="button" value="Calcular" onClick="this.form.mf.value = calculaMedia(this.form.nota1.value,this.form.nota2.value,this.form.peso1.value,this.form.peso2.value)" onmouseover="mOver(this)" onmouseout="mOut(this)"><br>
+            </form>
+        </center>
+    </body> 
+</html>

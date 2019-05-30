@@ -1,0 +1,46 @@
+*{
+    /* ajuste da margem */
+    margin: 1.5%;
+    margin-bottom: 0.2%
+}
+header{
+    /*ajuste da cor */
+    background-color: #FFF59D;
+    /*ajuste da fonte */
+    font-family: PT Sans, sans-serif;
+}
+#titulo{
+    /*ajuste da fonte */
+    font-size: 4em;
+    font-size-adjust: auto;
+}
+ul{
+    /* ajuste do posicionamento */
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+#compartilhar{
+    background-color: #FFFFFF;
+}
+#buscar{
+    background-color: #FFFFFF
+}
+footer{
+    background-color: #111111;
+}
+#rodape{
+    color: ghostwhite;
+    text-align: center;
+}
+barriga{
+    display: flex;
+}
+#div-esq{
+    
+}
+#div-dir{
+    /* ajuste de posicionamento */
+    display: inline-block;
+}

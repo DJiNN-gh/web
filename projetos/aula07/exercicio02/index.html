@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS descendant selectors</title> 
+        <style>
+            ul > li{
+                padding-bottom: 2em;
+            }
+            .orange {
+                background-color: orange;
+            }
+            .yellow {
+                background-color: yellow; 
+            }
+            .purple {
+                background-color: purple;
+                color: white; 
+            }
+            #id{
+                color: purple;
+                background-color: ghostwhite;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Carrot Facts</h1>
+        <p>Cores que encontramos em cenouras:</p> 
+        <ul>
+            <li>
+                <strong class="orange">Orange</strong>
+            </li>
+            <li>
+                <strong class="purple">Purple</strong>
+            </li>
+            <li>
+                <strong class="yellow">Yellow</strong>
+            </li>
+        </ul>
+        <h3>Propriedades da cenoura</h3>
+        <ol>
+            <li>Possui também as seguintes vitaminas: A, C, B2 e B3.
+            </li>
+            <li>Fósforo, potássio, cálcio e sódio são os sais minerais presentes na cenoura.
+            </li>
+            <li>A cenoura possui também uma boa quantidade de fibras.
+            </li>
+        </ol>
+        <p>Você sabia? Cenouras eram <strong class="purple" id="id">roxas</strong> antes do século 17, quando eram cultivadas por fazendeiros holandeses. Estes eram eventualmente surpreendidos com alguns vegetais mutantes que apresentavam coloração branca ou amarela.</p>
+    </body>
+</html>

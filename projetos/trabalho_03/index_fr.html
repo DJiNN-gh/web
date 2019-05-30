@@ -4,66 +4,154 @@
     <head>
       <title>Musique Communautaire</title>
       <meta charset="utf-8">
+      <link rel="alternate" hreflang="pt-br" href="index.html">
+      <link rel="alternate" hreflang="en" href="index_en.html">
       <style type="text/css">
+        * {
+          margin: 0;
+          padding: 0;
+        }
         body{
-          margin-left: 140px;
-          margin-right: 140px;
+          /* ajuste de posicionamento */
+          width: 100vw;
         }
         header{
+          /* configuração da fonte */
           font-family: Palatino, serif; 
           font-style: normal;
           font-size: 60px;
-          padding-top: 90px;
-          padding-bottom: 90px;
-          
+          color: #ffffff;
+          /* ajuste de posicionamento */
+          align-content: center;
+          justify-content: center;
+          padding-left: vw;
+          margin: auto;
+          width: 90vw;
+          height: 80vh;
+          /* plano de fundo */
+          background-color: #d81f11;
+        }
+        #apresentacao{
+          /* ajuste de posicionamento */
+          margin: auto;
+          width: 90vw;
+          /* plano de fundo */
+          background-color: #ffeb33;
+        }
+        #localizacao{
+          /* ajuste de posicionamento */
+          margin: auto;
+          width: 90vw;
+          box-sizing: border-box;
+          /* plano de fundo */
+          background-color: #ffff6c;
+        }
+        #horarios{
+          /* ajuste de posicionamento */
+          margin: auto;
+          width: 90vw;
+          box-sizing: border-box;
+          /* plano de fundo */
+          background-color: #ffff6c;
+        }
+        #blank1{
+          /* ajuste de posicionamento */
+          margin: 150px 0px 0px 0px;
+        }
+        #blank2{
+          /* ajuste de posicionamento */
+          margin: 76px 0px 0px 0px;
         }
         h1{
+          /* configuração da fonte */
           font-family: Palatino, serif;
           font-style: normal;
           font-size: 60px;
-          padding-right: 
         }
         div{
+          /* configuração da fonte */
           font-family: Palatino, serif;
           font-style: normal;
           font-size: 32px;
         }
         footer{
+          /* configuração da fonte */
           text-align: center; 
-          font-family: Lucida, sans-serif; 
+          font-family: Lucida Grande, sans-serif; 
           font-size: 18px;
-          padding-top: 300px;
+          color: #ffffff;
+          /* ajuste do posicionamento */
+          padding-top: 299px;
+          padding-bottom: 15px;
+          /* plano de fundo */
+          background-color: #d81f11;
         }
       </style>
     </head>
     <body>
-      <header>Musique Communaitaire</header>
-        <section id="apresentation">
-          <img src="./playing-piano.jpg" width="698px" height="400px">
-            <div id="1er" style="display: inline; text-align: right; ">Bienvenue à notre école musicale. Nous sommes les amoureux de la musique et notre objectif c'est partager avec vous l'appréciation musicale.
+      <header>
+        <p style="padding-top: 65vh; padding-left: 8vw;">Musique Communautaire</p>
+      </header>
+      <div id="blank1"></div>
+        <section id="apresentacao">
+          <div id="primeiro_bloco" style="display: flex;">
+            <div style="flex: 1;">
+              <img src="./playing-piano.jpg" width="600vw" height="400px"  alt="tocando-piano">
             </div>
-            <div id="2eme">Notre professeurs sont beaucoup versé en les plus diverses instruments. Il y a classes de piano, violin, guitarre, violoncelle, trompette et autres.
+            <div style="flex: 1; text-align: left; width: 568px; height: 272px; padding-right: 100px;; margin-top: 64px; margin-bottom: 64px; margin-left: 130px;">
+              <p>Bienvenue à notre école musicale. Nous sommes les amoureux de la musique et notre objectif c'est partager avec vous l'appréciation musicale.</p>
             </div>
-          <img src="./teacher-assisting.jpg" width="698px" height="400px">
-          <img src="./teaching_music_violin.jpg" width="698px" height="400px">
-            <div id="3eme">Ici, toutes les personnes aident les un les autres. Nous valorisons l'interaction entre les gens. C'est très important l'assitance pour l'apprentissage.
+          </div>
+          <div id="blank2"></div>
+          <div id="segundo_bloco" style="display: flex;">
+            <div style="flex: 1; text-align: right; width: 568px; height: 272px; padding-left: 100px; margin-top: 64px; margin-bottom: 64px; margin-right: 130px;">
+              <p>Notre professeurs sont beaucoup versé en les plus diverses instruments. Il y a des classes de piano, violon, guitare, violoncelle, trompette et autres.</p>
             </div>
-            <div id="4eme">En groupe, les gens de quelque âge participent avec leurs instruments. Nous adorons les pratiques en groupe, parce que nous croyons c'est le meilleur mode de pratiquer et apprendre.
+            <div style="flex: 1;">
+              <img src="./teacher-assisting.jpg" width="600vw" height="400px" alt="professor-ensinando">
             </div>
-          <img src="./School-Musical.jpg" width="698px" height="400px">
+          </div>
+          <div id="blank2"></div>
+          <div id="terceiro_bloco" style="display: flex;">
+            <div style="flex: 1;">
+              <img src="./teaching_music_violin.jpg" width="600vw" height="400px" alt="ensinando-violino">
+            </div>
+            <div style="flex: 1; text-align: left; width: 568px; height: 272px; padding-right: 100px; margin-top: 64px; margin-bottom: 64px; margin-left: 130px;">
+              <p>Ici, toutes les personnes aident les un les autres. Nous valorisons l'interaction entre les gens. C'est très important l’assistance pour l'apprentissage.</p>
+            </div>
+          </div>
+          <div id="blank2"></div>
+          <div id="quarto_bloco" style="display: flex;">
+            <div style="flex: 1; text-align: right; width: 568px; height: 272px; padding-left: 100px; margin-top: 64px; margin-bottom: 64px; margin-right: 130px;">
+              <p>En groupe, les gens de quelque âge participent avec leurs instruments. Nous adorons les pratiques en groupe, parce que nous croyons c'est le meilleur mode de pratiquer et apprendre.</p>
+            </div>
+            <div style="flex: 1;">
+              <img src="./school_musical.jpg" width="600vw" height="400px" alt="musical">
+            </div>
+          </div>
       </section>
-      <section id="localisation">
-        <h1>Rendre une visite</h1>
-        <div>Notre classes se passent dans le Jardin des Tuileries, à côte de la Rue de Rivoli, derrière de la gare Tuileries. 
+      <div id="blank1">
+      </div>
+      <section id="localizacao">
+        <div style="display: inline-flex; justify-content: center; align-items: center;">
+          <h1 style="margin: 68px 0px 68px 77px;">Rendre une visite</h1>
+            <p style="font-size: 24px; font-family: Helvetica Neue, sans-serif; text-align: right; margin: 66px 177px 66px 446px;">Notre classes se passent dans le Jardin des Tuileries, à côte de la Rue de Rivoli, derrière de la gare Tuileries.</p>
         </div>
       </section>
-      <section id="horaires">
-        <h1>Notre horaires</h1>
-        <div>Les classes sont ouverte les samedi et les dimanche, 08 h 00 à 14 h 30.
+      <div id="blank1" style="margin: 150px 0px 150px 0px">
+        </div>
+      <section id="horarios">
+        <div style="display: inline-flex;">
+          <h1 style="margin: auto; padding: 68px 0px 68px 77px;">Notre horaires</h1>
+            <p style="font-size: 24px; font-family: Helvetica Neue, sans-serif; text-align: right; margin: 66px 177px 66px 446px;">Les classes sont ouverte les samedi et les dimanche, 08 h 00 à 14 h 30.</p>
         </div>
       </section>
+      <div id="blank1">
+      </div>
       <footer>
-        <p>Musique Comunitaire - Depuis 2011</p>
+        <a href="index.html" class="button">Portugais</a>
+        <a href="index_en.html" class="button">Anglais</a>
+        <p>Musique Communautaire - Depuis 2011</p>
       </footer>
     </body>
   </html>
