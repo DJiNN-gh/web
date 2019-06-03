@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <title>Testando Canvas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link type="text/javascript" href="script.js">
+    <script>
+      function iniciar(){
+      
+      var c = document.getElementById("desenho");
+      var ctx = c.getContext("2d");
+      var grad = ctx.createLinearGradient(0, 0, 396, 0);
+      
+      grad.addColorStop();
+      grad.addColorStop(1, "#6D3579");
+      grad.addColorStop(0, "#854A5C");
+      grad.addColorStop(1, "#FABADA");
+      grad.addColorStop(0, "#DAB94A");
+      
+      ctx.fillStyle = grad;
+      ctx.fillRect(2, 2, 396, 96);
+
+      return;}
+    </script>
+  </head>
+  <body onload="iniciar()">
+    <div class="bloco_primeiro">
+      <p>Trabalhando com Canvas</p>
+      <canvas id="desenho" width="400px" height="100px">
+        
+        <!-- Deu erro -->
+      </canvas>
+    </div>
+  </body>
+</html>

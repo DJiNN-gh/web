@@ -1,46 +1,87 @@
 *{
-    /* ajuste da margem */
-    margin: 1.5%;
-    margin-bottom: 0.2%
+  /* ajuste da fonte */
+  font-family: PT Sans, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
 }
 header{
-    /*ajuste da cor */
-    background-color: #FFF59D;
-    /*ajuste da fonte */
-    font-family: PT Sans, sans-serif;
+  /*ajuste da cor */
+  background-color: #FFF59D;
+  /* ajuste de posicionamento */
+  height: 14em;
 }
 #titulo{
-    /*ajuste da fonte */
-    font-size: 4em;
-    font-size-adjust: auto;
+  /*ajuste da fonte */
+  font-size: 4em;
+  font-size-adjust: auto;
+  font-weight: 600;
+  /* ajuste de posicionamento */
+  padding: 1% 0 4% 12%;
+}
+.menu{
+  /* ajuste da fonte */
+  font-size: 1.2em;
+  font-size-adjust: auto;
+  font-weight: 400;
+  /* ajuste de posicionamento */
+  margin: 1% 0% 0% 10%;
+  height: 4em;
+  width: 80%;
+  align-content: center;
+  justify-content: center;
+  /* ajuste da cor */
+  background-color: #FFFFFF;
 }
 ul{
-    /* ajuste do posicionamento */
-    display: flex;
+  /* ajuste do posicionamento */
+  display: flex;
 }
 li{
-    list-style-type: none;
+  list-style-type: none;
+}
+#home{
+  /* ajuste da cor */
+  background-color: #FFFFCF;
+  /* ajuste de tamanho */
+  padding: 0% 5% 0% 5%;
 }
 #compartilhar{
-    background-color: #FFFFFF;
+  /* ajuste da cor */
+  background-color: #FFFFFF;
+  /* ajuste de posicionamento */
+  padding: 0% 5% 0% 5%;
 }
 #buscar{
-    background-color: #FFFFFF
+  /* ajuste da cor */
+  background-color: #FFFFFF;
+  /* ajuste de posicionamento */
+  padding: 0% 5% 0% 5%;
 }
-footer{
-    background-color: #111111;
-}
-#rodape{
-    color: ghostwhite;
-    text-align: center;
-}
-barriga{
-    display: flex;
+#barriga{
+  display: flex;
+  padding: 1% 10% 5% 10%;
 }
 #div-esq{
-    
+
 }
 #div-dir{
-    /* ajuste de posicionamento */
-    display: inline-block;
+  /* ajuste de posicionamento */
+  display: inline-block;
+}
+footer{
+  /* ajuste da cor */
+  background-color: #111111;
+}
+#rodape{
+  /* ajuste da fonte */
+  color: ghostwhite;
+  text-align: center;
+  /* ajuste de posicionamento */
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
