@@ -1,0 +1,89 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <title>L'Accord</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css family=PT+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div id="container_h">
+        <p id="titulo">L'Accord</p>
+          <nav class="menu">
+            <ul>
+              <li id="home">
+                <picture>
+                  <a href="index.html">
+                    <img id="home_img" src="images/home.png" alt="Home">
+                  </a>
+                </picture>
+              </li>
+              <li id="compartilhar">
+                <a href="share.html">COMPARTILHAR</a>
+              </li>
+              <li id="buscar">
+                <a href="search.html">BUSCAR</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <section id="upload">
+      <h1>Nova Música</h1>
+      <p>Envie suas músicas e disponibilize-as através do nosso site</p>
+      <form class="formulario">
+        <input type="text" name="nome_musica" placeholder="Nome da música" size="50">
+        <div id="form_instrumento">
+          <h2>Instrumento</h2>
+          <select name="instrumento">
+            <option value="guitarra_acustica" selected>Violão</option>
+            <option value="guitarra_eletrica">Guitarra</option>
+            <option value="baixo_eletrico">Baixo</option>
+            <option value="bateria">Bateria</option>
+            <option value="violino">Violino</option>
+            <option value="baixo_acustico">Contrabaixo</option>
+            <option value="trompete">Trompete</option>
+            <option value="flauta">Flauta</option>
+            <option value="saxofone">Saxofone</option>
+            <option value="gaita">Gaita</option>
+            <option value="piano">Piano</option>
+            <option value="teclado">Teclado</option>
+          </select>
+        </div>
+        <div id="form_genero">
+          <h2>Gênero</h2>
+          <select name="genero">
+            <option value="classico" selected>Clássica</option>
+            <option value="romantico">Romântica</option>
+            <option value="blues">Blues</option>
+            <option value="jazz">Jazz</option>
+            <option value="flamenco">Flamenco</option>
+            <option value="folk">Folk</option>
+            <option value="country">Country</option>
+            <option value="rock">Rock</option>
+            <option value="raggae">Raggae</option>
+            <option value="metal">Metal</option>
+            <option value="indie">Indie</option>
+            <option value="punk">Punk</option>
+          </select>
+        </div>
+        <div id="form_arquivo">
+          <h2>Selecione o arquivo (MP3, WAV, WMA ou FLAC)</h2>
+          <input type="file" name="arquivo">
+        </div>
+        <div id="botoes">
+          <input type="reset" id="limpar" value="Limpar">
+          <input type="submit" id="enviar" value="Enviar">
+          <script>document.getElementById("enviar").onclick = function(){
+            window.alert("Enviado com sucesso")
+            }</script>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p id="rodape">TODOS OS DIREITOS RESERVADOS - DESDE 2013</p>
+    </footer>
+  </body>
+</html>

@@ -2,58 +2,93 @@
 
 <html lang="pt-br">
   <head>
-      <title>L'Accord</title>
-      <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="style.css">
-      <link href="https://fonts.googleapis.com/css family=PT+Sans&display=swap" rel="stylesheet">
-      <link href="script.js">
+    <title>L'Accord</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-      <header>
-          <p id="titulo">L'Accord</p>
+    <header>
+      <div id="container_h">
+        <p id="titulo">L'Accord</p>
           <nav class="menu">
-              <ul>
-                  <div id="home">
-                      <li>
-                        <picture>
-                          <img src="images/home.png" alt="HOME" width="12%" height="12%">
-                        </picture>
-                      </li>
-                  </div>
-                  <div id="compartilhar">
-                      <li>
-                          <p>COMPARTILHAR</p>
-                      </li>
-                  </div>
-                  <div id="buscar">
-                      <li>
-                          <p>BUSCAR</p>
-                      </li>
-                  </div>
-              </ul>
+            <ul>
+              <li id="home">
+                <picture>
+                  <a href="index.html">
+                    <img id="home_img" src="images/home.png" alt="Home">
+                  </a>
+                </picture>
+              </li>
+              <li id="compartilhar">
+                <a href="share.html">COMPARTILHAR</a>
+              </li>
+              <li id="buscar">
+                <a href="search.html">BUSCAR</a>
+              </li>
+            </ul>
           </nav>
+        </div>
       </header>
       <section id="barriga">
-          <div id="div_esq">
-              <picture>
-                  <img src="images/community-unsplash.jpg" alt="Comunidade" width="100%" height="100%">
-              </picture>
+        <div id="div_esq">
+          <picture>
+            <img id="community_img" src="images/community-unsplash.jpg" alt="Comunidade">
+            <script>var imagem1 = document.getElementById("community_img")
+                imagem1.onmouseover = function(imagem1){
+                  imagem1.target.style.filter = "blur(3px)";
+                  imagem1.target.style.filter = "brightness(80%)";
+                }
+                imagem1.onmouseout = function(imagem1){
+                  imagem1.target.style.filter = "blur(0)";
+                  imagem1.target.style.filter = "brightness(100%)";
+                }
+            </script>
+          </picture>
+          <div id="text_01">
+            <h1>Bem-vindo(a) ao L'Accord! Nosso site visa conectar pessoas que são apaixonadas por música e querem espalhar essa paixão por aí</h1>
           </div>
-          <div id="div_dir">
-              <div id="div_dir_top">
-                  <picture>
-                      <img src="images/sound-engineering-unsplash.jpg" alt="" width="80%" height="100%">
-                  </picture>
-              </div>
-              <div id="div_dir_bot">
-                  <picture>
-                      <img src="images/radio-unsplash.jpg" alt="Radio" width="80%" height="100%">
-                  </picture>
-              </div>
+        </div>
+        <div id="div_dir">
+          <div id="div_dir_top">
+            <picture>
+              <img id="engineering_img" src="images/sound-engineering-unsplash.jpg" alt="Engenharia de som">
+              <script>var imagem2 = document.getElementById("engineering_img")
+                imagem2.onmouseover = function(imagem2){
+                  imagem2.target.style.filter = "blur(3px)";
+                  imagem2.target.style.filter = "brightness(80%)";
+                }
+                imagem2.onmouseout = function(imagem2){
+                  imagem2.target.style.filter = "blur(0px)";
+                  imagem2.target.style.filter = "brightness(100%)";
+                }
+              </script>
+            </picture>
+            <div id="text_02">
+              <h1>Aqui você poderá compartilhar suas músicas e produções, assim como encontrar músicas criadas por outros artistas</h1>
+            </div>
           </div>
+          <div id="div_dir_bot">
+            <picture>
+              <img id="radio_img" src="images/radio-unsplash.jpg" alt="Rádio">
+              <script>var imagem3 = document.getElementById("radio_img")
+                imagem3.onmouseover = function(imagem3){
+                  imagem3.target.style.filter = "blur(3px)";
+                  imagem3.target.style.filter = "brightness(80%)";
+                }
+                imagem3.onmouseout = function(imagem3){
+                  imagem3.target.style.filter = "blur(0px)";
+                  imagem3.target.style.filter = "brightness(100%)";
+                }</script>
+            </picture>
+            <div id="text_03">
+              <h1>Sons de todos os cantos do mundo, dos mais diferentes estilos, para os mais diversos gostos. Tudo a alguns cliques, e completamente de graça</h1>
+            </div>
+          </div>
+        </div>
       </section>
       <footer>
-          <p id="rodape">TODOS OS DIREITOS RESERVADOS - DESDE 2013</p>
+        <p id="rodape">TODOS OS DIREITOS RESERVADOS - DESDE 2013</p>
       </footer>
   </body>
 </html>
