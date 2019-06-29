@@ -5,7 +5,7 @@
   font-size: 100%;
   font-weight: normal;
   /* ajuste da fonte */
-  font-family: PT Sans, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   box-sizing: border-box;
 }
 img{
@@ -303,8 +303,8 @@ footer{
   background-color: #111111;
   /* ajuste do posicionamento */
   width: 100%;
-  position: relative;
-  bottom: 0px;
+  position: fixed;
+  bottom: -0px;
 }
 #rodape{
   /* ajuste da fonte */
