@@ -4,7 +4,7 @@
   <head>
     <title>L'Accord</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -62,8 +62,8 @@
             <option value="flamenco">Flamenco</option>
             <option value="folk">Folk</option>
             <option value="country">Country</option>
-            <option value="rock">Rock</option>
             <option value="raggae">Raggae</option>
+            <option value="rock">Rock</option>
             <option value="metal">Metal</option>
             <option value="indie">Indie</option>
             <option value="punk">Punk</option>
@@ -76,9 +76,12 @@
         <div id="botoes">
           <input type="reset" id="limpar" value="Limpar">
           <input type="submit" id="enviar" value="Enviar">
-          <script>document.getElementById("enviar").onclick = function(){
-            window.alert("Enviado com sucesso")
-            }</script>
+          <script>
+            let button1 = document.getElementById("enviar");
+            
+            button1.onclick = function(){
+              window.alert("Enviado com sucesso");}
+          </script>
         </div>
       </form>
     </section>

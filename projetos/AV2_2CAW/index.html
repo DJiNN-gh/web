@@ -4,7 +4,7 @@
   <head>
     <title>L'Accord</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css family=PT+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -34,16 +34,6 @@
         <div id="div_esq">
           <picture>
             <img id="community_img" src="images/community-unsplash.jpg" alt="Comunidade">
-            <script>var imagem1 = document.getElementById("community_img")
-                imagem1.onmouseover = function(imagem1){
-                  imagem1.target.style.filter = "blur(3px)";
-                  imagem1.target.style.filter = "brightness(80%)";
-                }
-                imagem1.onmouseout = function(imagem1){
-                  imagem1.target.style.filter = "blur(0)";
-                  imagem1.target.style.filter = "brightness(100%)";
-                }
-            </script>
           </picture>
           <div id="text_01">
             <h1>Bem-vindo(a) ao L'Accord! Nosso site visa conectar pessoas que são apaixonadas por música e querem espalhar essa paixão por aí</h1>
@@ -53,16 +43,6 @@
           <div id="div_dir_top">
             <picture>
               <img id="engineering_img" src="images/sound-engineering-unsplash.jpg" alt="Engenharia de som">
-              <script>var imagem2 = document.getElementById("engineering_img")
-                imagem2.onmouseover = function(imagem2){
-                  imagem2.target.style.filter = "blur(3px)";
-                  imagem2.target.style.filter = "brightness(80%)";
-                }
-                imagem2.onmouseout = function(imagem2){
-                  imagem2.target.style.filter = "blur(0px)";
-                  imagem2.target.style.filter = "brightness(100%)";
-                }
-              </script>
             </picture>
             <div id="text_02">
               <h1>Aqui você poderá compartilhar suas músicas e produções, assim como encontrar músicas criadas por outros artistas</h1>
@@ -71,15 +51,6 @@
           <div id="div_dir_bot">
             <picture>
               <img id="radio_img" src="images/radio-unsplash.jpg" alt="Rádio">
-              <script>var imagem3 = document.getElementById("radio_img")
-                imagem3.onmouseover = function(imagem3){
-                  imagem3.target.style.filter = "blur(3px)";
-                  imagem3.target.style.filter = "brightness(80%)";
-                }
-                imagem3.onmouseout = function(imagem3){
-                  imagem3.target.style.filter = "blur(0px)";
-                  imagem3.target.style.filter = "brightness(100%)";
-                }</script>
             </picture>
             <div id="text_03">
               <h1>Sons de todos os cantos do mundo, dos mais diferentes estilos, para os mais diversos gostos. Tudo a alguns cliques, e completamente de graça</h1>
@@ -90,5 +61,68 @@
       <footer>
         <p id="rodape">TODOS OS DIREITOS RESERVADOS - DESDE 2013</p>
       </footer>
+    <script type="text/javascript">
+      <!--Declaracão de variáveis-->
+      let image1 = document.getElementById("community_img");
+      let image2 = document.getElementById("engineering_img");
+      let image3 = document.getElementById("radio_img");
+      
+      let text1 = document.getElementById("text_01");
+      let text2 = document.getElementById("text_02");
+      let text3 = document.getElementById("text_03");
+      
+      <!--Função para primeira imagem-->
+      image1.onmouseenter = function(){
+        image1.classList.add("filtro");
+        text1.classList.add("bringtofront");}
+      
+      image1.onmouseout = function(){
+        image1.classList.remove("filtro");
+        text1.classList.remove("bringtofront");}
+      
+      text1.onmouseenter = function(){
+        image1.classList.add("filtro");
+        text1.classList.add("bringtofront");}
+      
+      text1.onmouseout = function(){
+        image1.classList.remove("filtro");
+        text1.classList.remove("bringtofront");}
+      
+      
+      <!--Função para segunda imagem-->
+      image2.onmouseenter = function(){
+        image2.classList.add("filtro");
+        text2.classList.add("bringtofront");}
+      
+      image2.onmouseout = function(){  
+        image2.classList.remove("filtro");
+        text2.classList.remove("bringtofront");}
+      
+      text2.onmouseenter = function(){
+        image2.classList.add("filtro");
+        text2.classList.add("bringtofront");}
+      
+      image2.onmouseout = function(){
+        image2.classList.remove("filtro");
+        text2.classList.remove("bringtofront");}
+
+      
+      <!--Função para terceira imagem-->
+      image3.onmouseenter = function(){
+        image3.classList.add("filtro");
+        text3.classList.add("bringtofront");}
+      
+      image3.onmouseout = function(){
+        image3.classList.remove("filtro");
+        text3.classList.remove("bringtofront");}
+      
+      text3.onmouseenter = function(){
+        image3.classList.add("filtro");
+        text3.classList.add("bringtofront");}
+      
+      image3.onmouseout = function(){
+        image3.classList.remove("filtro");
+        text3.classList.remove("bringtofront");}
+    </script>
   </body>
 </html>
