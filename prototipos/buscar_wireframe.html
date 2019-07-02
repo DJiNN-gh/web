@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>buscar-wireframe</title>
+<style id="applicationStylesheet" type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	:root {
+		--web-view-ids: buscar_wireframe;
+	}
+	#buscar_wireframe * {
+		margin: 0;
+		padding: 0;
+	}
+	#buscar_wireframe {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+		opacity: 1;
+		--web-view-name: buscar-wireframe;
+		--web-view-id: buscar_wireframe;
+		--web-enable-deep-linking: true;
+	}
+	#Rectangle_1 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 179px;
+		left: 0px;
+		top: 0px;
+	}
+	#T_TULO_AQUI {
+		opacity: 1;
+		position: absolute;
+		left: 100px;
+		top: 54px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 377px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 60px;
+		color: rgba(112,112,112,1);
+	}
+	#Rectangle_13 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_13 {
+		position: absolute;
+		overflow: visible;
+		width: 1364px;
+		height: 123px;
+		left: 278px;
+		top: 391px;
+	}
+	#Rectangle_14 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_14 {
+		position: absolute;
+		overflow: visible;
+		width: 398px;
+		height: 123px;
+		left: 1244px;
+		top: 391px;
+	}
+	#BUSCA {
+		opacity: 1;
+		position: absolute;
+		left: 1382px;
+		top: 434px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 103px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#CAMPO_DE_BUSCA {
+		opacity: 1;
+		position: absolute;
+		left: 400px;
+		top: 434px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 276px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#Rectangle_15 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_15 {
+		position: absolute;
+		overflow: visible;
+		width: 1364px;
+		height: 386px;
+		left: 278px;
+		top: 524px;
+	}
+	#Rectangle_4 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_4 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 65px;
+		left: 0px;
+		top: 1015px;
+	}
+	#TODOS_OS_DIREITOS_RESERVADOS__ {
+		opacity: 1;
+		position: absolute;
+		left: 601px;
+		top: 1029px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 719px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO {
+		opacity: 1;
+		position: absolute;
+		left: 326px;
+		top: 591px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 179px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO_RESULTADO_RESULTADO {
+		opacity: 1;
+		position: absolute;
+		left: 326px;
+		top: 591px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 552px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO_RESULTADO_RESULTADO_A0_Text_7 {
+		opacity: 1;
+		position: absolute;
+		left: 327px;
+		top: 743px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 552px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO_RESULTADO_RESULTADO_A0_Text_8 {
+		opacity: 1;
+		position: absolute;
+		left: 327px;
+		top: 705px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 552px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO_RESULTADO_RESULTADO_A0_Text_9 {
+		opacity: 1;
+		position: absolute;
+		left: 327px;
+		top: 667px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 552px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO_RESULTADO_RESULTADO_A0_Text_10 {
+		opacity: 1;
+		position: absolute;
+		left: 326px;
+		top: 629px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 552px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#RESULTADO_RESULTADO_RESULTADO_A0_Text_11 {
+		opacity: 1;
+		position: absolute;
+		left: 327px;
+		top: 781px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 552px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#Rectangle_8 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_8 {
+		position: absolute;
+		overflow: visible;
+		width: 203px;
+		height: 159px;
+		left: 141px;
+		top: 151px;
+	}
+	#Ellipse_1 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 123px;
+		height: 123px;
+		left: 181px;
+		top: 175px;
+	}
+	#HOME {
+		opacity: 1;
+		position: absolute;
+		left: 193px;
+		top: 218px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#Rectangle_21 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_21 {
+		position: absolute;
+		overflow: visible;
+		width: 398px;
+		height: 158px;
+		left: 774px;
+		top: 152px;
+	}
+	#Rectangle_20 {
+		opacity: 1;
+		fill: rgba(255,255,255,1);
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_20 {
+		position: absolute;
+		overflow: visible;
+		width: 398px;
+		height: 158px;
+		left: 360px;
+		top: 152px;
+	}
+	#COMPARTILHAR {
+		opacity: 1;
+		position: absolute;
+		left: 439.5px;
+		top: 218px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 242px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+	#Line_1 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		top: 265.5px;
+		left: 360.5px;
+		width: 398px;
+		height: 1px;
+	}
+	#Line_2 {
+		opacity: 1;
+		fill: transparent;
+		stroke: rgb(112, 112, 112);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Line_2 {
+		overflow: visible;
+		position: absolute;
+		top: 265.5px;
+		left: 774.5px;
+		width: 398px;
+		height: 1px;
+	}
+	#BUSCAR {
+		opacity: 1;
+		position: absolute;
+		left: 913px;
+		top: 218px;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		width: 122px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Optima;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		color: rgba(112,112,112,1);
+	}
+</style>
+</head>
+<body>
+<div id="buscar_wireframe">
+	<svg class="Rectangle_1">
+		<rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1920" height="179">
+		</rect>
+	</svg>
+	<div id="T_TULO_AQUI">
+		<span>TÍTULO AQUI</span>
+	</div>
+	<svg class="Rectangle_13">
+		<rect id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="1364" height="123">
+		</rect>
+	</svg>
+	<svg class="Rectangle_14">
+		<rect id="Rectangle_14" rx="0" ry="0" x="0" y="0" width="398" height="123">
+		</rect>
+	</svg>
+	<div id="BUSCA">
+		<span>BUSCA</span>
+	</div>
+	<div id="CAMPO_DE_BUSCA">
+		<span>CAMPO DE BUSCA</span>
+	</div>
+	<svg class="Rectangle_15">
+		<rect id="Rectangle_15" rx="0" ry="0" x="0" y="0" width="1364" height="386">
+		</rect>
+	</svg>
+	<svg class="Rectangle_4">
+		<rect id="Rectangle_4" rx="0" ry="0" x="0" y="0" width="1920" height="65">
+		</rect>
+	</svg>
+	<div id="TODOS_OS_DIREITOS_RESERVADOS__">
+		<span>TODOS OS DIREITOS RESERVADOS - DESDE 2013</span>
+	</div>
+	<div id="RESULTADO">
+		<span>RESULTADO</span>
+	</div>
+	<div id="RESULTADO_RESULTADO_RESULTADO">
+		<span>RESULTADO RESULTADO RESULTADO</span>
+	</div>
+	<div id="RESULTADO_RESULTADO_RESULTADO_A0_Text_7">
+		<span>RESULTADO RESULTADO RESULTADO</span>
+	</div>
+	<div id="RESULTADO_RESULTADO_RESULTADO_A0_Text_8">
+		<span>RESULTADO RESULTADO RESULTADO</span>
+	</div>
+	<div id="RESULTADO_RESULTADO_RESULTADO_A0_Text_9">
+		<span>RESULTADO RESULTADO RESULTADO</span>
+	</div>
+	<div id="RESULTADO_RESULTADO_RESULTADO_A0_Text_10">
+		<span>RESULTADO RESULTADO RESULTADO</span>
+	</div>
+	<div id="RESULTADO_RESULTADO_RESULTADO_A0_Text_11">
+		<span>RESULTADO RESULTADO RESULTADO</span>
+	</div>
+	<svg class="Rectangle_8">
+		<rect id="Rectangle_8" rx="0" ry="0" x="0" y="0" width="203" height="159">
+		</rect>
+	</svg>
+	<svg class="Ellipse_1">
+		<ellipse id="Ellipse_1" rx="61.5" ry="61.5" cx="61.5" cy="61.5">
+		</ellipse>
+	</svg>
+	<div id="HOME">
+		<span>HOME</span>
+	</div>
+	<svg class="Rectangle_21">
+		<rect id="Rectangle_21" rx="0" ry="0" x="0" y="0" width="398" height="158">
+		</rect>
+	</svg>
+	<svg class="Rectangle_20">
+		<rect id="Rectangle_20" rx="0" ry="0" x="0" y="0" width="398" height="158">
+		</rect>
+	</svg>
+	<div id="COMPARTILHAR">
+		<span>COMPARTILHAR</span>
+	</div>
+	<svg class="Line_1">
+		<path id="Line_1" d="M 0 0 L 398 0">
+		</path>
+	</svg>
+	<svg class="Line_2">
+		<path id="Line_2" d="M 0 0 L 398 0">
+		</path>
+	</svg>
+	<div id="BUSCAR">
+		<span>BUSCAR</span>
+	</div>
+</div>
+</body>
+</html>
